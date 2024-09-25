@@ -37,9 +37,9 @@ header {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: inset 0 0 0 0 #518aa5;
-  -webkit-transition: ease-out .8s;
-  -moz-transition: ease-out .8s;
-  transition: ease-out .7s;
+  -webkit-transition: ease-out 0.8s;
+  -moz-transition: ease-out 0.8s;
+  transition: ease-out 0.7s;
 }
 .contactar:hover {
   box-shadow: inset 400px 50px 0 0 #518aa5;
@@ -58,10 +58,8 @@ header {
 /*Todo lo de arriba representa la parte del header es decir la cabecera. La parte de la animacion en el boton de contactar esta sacada de una pagina web*/
 
 main {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-grow: 1;
+  display: block;
   margin: auto;
 }
 .primeraZona {
@@ -90,32 +88,31 @@ main {
   justify-content: center;
   width: 50%;
   height: 50%;
-  
-  -webkit-animation: fotoAnimada .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: fotoAnimada .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  
+
+  -webkit-animation: fotoAnimada 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: fotoAnimada 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @-webkit-keyframes fotoAnimada {
   0% {
     -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    transform: translateX(1000px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
 @keyframes fotoAnimada {
   0% {
     -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    transform: translateX(1000px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -156,4 +153,84 @@ main {
     transform: translateZ(0);
     opacity: 1;
   }
+}
+
+/*Esto ya se trata de la segunda zona del main*/
+.segundaZona {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.segundaImagenContenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+}
+
+.segundaZonaTexto {
+  margin: auto;
+  display: block;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+}
+
+.segundaImagen {
+  width: 100%;
+}
+
+.quienesSomos {
+  font-size: x-large;
+  color: white;
+  margin: auto;
+  text-transform: uppercase;
+  text-shadow: 5px 1px 13px #ffffff;
+}
+.texto {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 5px 1px 13px #ffffff;
+}
+
+.terceraZona {
+
+  width: 40%; 
+  margin: 20px auto;
+  padding: 5px;
+  background-color: black; 
+  border: 1px solid grey; 
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-carrusel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 5px; 
+}
+
+.logro {
+  flex: 0 0 150px; 
+  margin: 10px;
+  padding: 10px;
+  background-color: black; 
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  height: 100px; 
+}
+
+.logro:hover {
+  color: white; 
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
 }
