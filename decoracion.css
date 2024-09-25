@@ -201,9 +201,10 @@ main {
   text-shadow: 5px 1px 13px #ffffff;
 }
 
-.terceraZona {
+/*Esto ya se trata de la tercera zona del main*/
 
-  width: 40%; 
+.terceraZona {
+  width: 30%; 
   margin: 20px auto;
   padding: 5px;
   background-color: black; 
