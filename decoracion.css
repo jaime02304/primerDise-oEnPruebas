@@ -204,11 +204,11 @@ main {
 /*Esto ya se trata de la tercera zona del main*/
 
 .terceraZona {
-  width: 30%; 
+  width: 30%;
   margin: 20px auto;
   padding: 5px;
-  background-color: black; 
-  border: 1px solid grey; 
+  background-color: black;
+  border: 1px solid grey;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
@@ -217,21 +217,28 @@ main {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  padding: 5px; 
+  padding: 5px;
 }
 
 .logro {
-  flex: 0 0 150px; 
+  flex: 0 0 150px;
   margin: 10px;
   padding: 10px;
-  background-color: black; 
+  background-color: black;
   border: 1px solid #333;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  height: 100px; 
+  height: 100px;
 }
 
 .logro:hover {
-  color: white; 
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/*footer*/
+.zonaContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
